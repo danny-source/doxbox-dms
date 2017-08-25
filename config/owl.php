@@ -677,8 +677,9 @@ $default->popup_lifetime = 3000;
 // HEBREW:        $default->list_of_valid_chars_in_file_names = "-A-Za-z0-9._[:space:]אבגדהוזחטיכלמנסעפצקרשתךףץם()@#$\{}+,&;";
 // RUSSIAN:       $default->list_of_valid_chars_in_file_names = "-A-Za-z0-9._[:space:]()@#$\{}+,&;ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮЁёйцукенгшщзхъфывапролджэячсмитьбю";
 // DEFAULT:       $default->list_of_valid_chars_in_file_names = "-A-Za-z0-9._[:space:]ÀàÁáÂâÃãÄäÅåÆæÇçÈèÉéÊêËëÌìÍíÎîÐðÏïÑñÒòÓóÔôÕõÖö×÷ØøÙùÚúÛûÜüÝýßÞþÿ()@#$\{}+,&;";
-$default->list_of_valid_chars_in_file_names = "-A-Za-z0-9._[:space:]ÀàÁáÂâÃãÄäÅåÆæÇçÈèÉéÊêËëÌìÍíÎîÐðÏïÑñÒòÓóÔôÕõÖö×÷ØøÙùÚúÛûÜüÝýßÞþÿ()@#$\{}+,&;§";
-
+//$default->list_of_valid_chars_in_file_names = "-A-Za-z0-9._[:space:]ÀàÁáÂâÃãÄäÅåÆæÇçÈèÉéÊêËëÌìÍíÎîÐðÏïÑñÒòÓóÔôÕõÖö×÷ØøÙùÚúÛûÜüÝýßÞþÿ()@#$\{}+,&;§";
+//for chinese/jp and $default->filesystem_utf8_only = true
+$default->list_of_valid_chars_in_file_names = "\x{4e00}-\x{9fff}|^A-Za-z0-9._()@#$\{}+,&;§";
 // **********************************************************************
 // *** OWL STATIC - FILE UPLOAD - INDEX ON ADD ARCHIVE
 //
@@ -888,7 +889,7 @@ $default->append_doc_version_to_downloaded_files = 0;
 // WARNING: They should only be changed if you know what you are doing :)
 $default->add_convert_from_charset = "ISO-8859-1";
 //
-$default->add_convert_to_charset = "cp850";
+$default->add_convert_to_charset = "cp950";
 
 // **********************************************************************
 // *** OWL STATIC - ADDITIONAL PARAMETERS
@@ -1279,4 +1280,8 @@ $default->domtt_popup =   "return makeTrue(domTT_activate(this, event, 'caption'
 // **********************************************************************
 $default->show_online_users = 1;
 
+// **********************************************************************
+// *** 
+// **********************************************************************
+$default->filesystem_utf_8_only = true;
 ?>

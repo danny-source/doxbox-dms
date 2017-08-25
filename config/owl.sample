@@ -1254,4 +1254,8 @@ $default->download_notify_list[]  = 'security_manager2@yourdomain.com';
 
 $default->wysiwyg_permited_html_tags = '<br><b><h1><h2><h3><h4><font><color><br /><p><strong><em><span>';
 $default->permited_html_tags = '<br><b><h1><h2><br />';
+// **********************************************************************
+// *** 
+// **********************************************************************
+$default->filesystem_utf_8_only = true;
 ?>

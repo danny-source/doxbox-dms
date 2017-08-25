@@ -6596,6 +6596,11 @@ function fCopyFileAcl($iSourceFile, $iDestFile)
 
 function fOwl_ereg_replace ($sPattern, $sSubstitute, $sString)
 {
+   global $default;
+   
+   if ($default->filesystem_utf_8_only == true) {
+	   return preg_replace("/" . $sPattern . "/u" , $sSubstitute, $sString);
+   }
    if (function_exists('mb_ereg_replace'))
    {
       return mb_ereg_replace($sPattern, $sSubstitute, $sString);
