@@ -325,7 +325,12 @@ if (isset($default->owl_lang))
          if (!$language)
          {
             $language = $default->owl_lang;
-         } 
+         }
+         //if language is not exists force language to English
+         if (!file_exists("$default->owl_fs_root/locale/$language/language.inc"))
+         {
+			 $language = $default->owl_lang;
+		 }
          if (file_exists("$default->owl_fs_root/locale/$language/language.inc"))
          {
             if (is_readable("$default->owl_fs_root/locale/$language/language.inc"))

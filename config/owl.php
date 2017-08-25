@@ -946,6 +946,7 @@ $default->use_file_expiry = 0;
 // $default->owl_lang = "Deutsch" ;
 // $default->owl_lang = "Dutch" ;
    $default->owl_lang = "English" ;
+// $default->owl_lang = "繁體中文";
 // $default->owl_lang = "Francais" ;
 // $default->owl_lang = "Hungarian" ;
 // $default->owl_lang = "Italian" ;
