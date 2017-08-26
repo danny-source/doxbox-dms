@@ -1225,7 +1225,7 @@ function fGetBrowserLanguage()
          $sOwlLang = "Swedish";
       break;
       case "zh":
-         $sOwlLang = "Chinese-b5";
+         $sOwlLang = "繁體中文";
          break;
       default:
          $sOwlLang = $default->owl_lang;

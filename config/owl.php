@@ -630,7 +630,7 @@ $default->file_hash_algorithm[3] = "MHASH_RIPEMD160";
 // **********************************************************************
 // *** OWL STATIC - GENERAL DISPLAY OPTIONS - Footer Display Information
 // This is to display the version information in the footer
-$default->version = "DoxBox 1.12 (2013-Aug-15)";
+$default->version = "DoxBox 1.12.1 (2017-Aug-26)";
 $default->site_title = "Document Management System ";
 $default->phpversion = "5.3.3";
 
@@ -679,7 +679,7 @@ $default->popup_lifetime = 3000;
 // DEFAULT:       $default->list_of_valid_chars_in_file_names = "-A-Za-z0-9._[:space:]ÀàÁáÂâÃãÄäÅåÆæÇçÈèÉéÊêËëÌìÍíÎîÐðÏïÑñÒòÓóÔôÕõÖö×÷ØøÙùÚúÛûÜüÝýßÞþÿ()@#$\{}+,&;";
 //$default->list_of_valid_chars_in_file_names = "-A-Za-z0-9._[:space:]ÀàÁáÂâÃãÄäÅåÆæÇçÈèÉéÊêËëÌìÍíÎîÐðÏïÑñÒòÓóÔôÕõÖö×÷ØøÙùÚúÛûÜüÝýßÞþÿ()@#$\{}+,&;§";
 //for chinese/jp and $default->filesystem_utf8_only = true
-$default->list_of_valid_chars_in_file_names = "\x{4e00}-\x{9fff}|^A-Za-z0-9._()@#$\{}+,&;§";
+$default->list_of_valid_chars_in_file_names = "\x{4e00}-\x{9fff}|^A-Za-z0-9._()@#$\{}+,&;§\-";
 // **********************************************************************
 // *** OWL STATIC - FILE UPLOAD - INDEX ON ADD ARCHIVE
 //

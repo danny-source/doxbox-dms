@@ -23,7 +23,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
+ * 
+ * Date: 2017/08/26
+ * Maintainer:Danny Lin <danny@35g.tw>
+ * 
+ * 
+ * 
 */
 
 
@@ -82,7 +87,7 @@ $owl_lang->err_file_not_exist		 = "檔案不存在";
 $owl_lang->err_file_too_big		 = "php.ini 設定檔中的 upload_max_filesize 參數值超過了! 或許<BR>超過了 Owl 規定的上傳檔案大小的上限";
 $owl_lang->err_file_update		 = "上傳的檔案名稱與系統保留名稱相同，請改用其它的名稱";
 $owl_lang->err_fileexists    		 = "搬移已被取消<BR>發現有同名檔案.";
-$owl_lang->err_move_failed              = "Filesystem File Move Failed! Aborting Move.";
+$owl_lang->err_move_failed              = "檔案搬移失敗!中止搬移檔案.";
 $owl_lang->err_filemove_exist            = "您欲改名的檔案名稱已存在";
 $owl_lang->err_folder_create 		 = "開設新資料夾發生錯誤";
 $owl_lang->err_folder_exist		 = "這個資料夾已經存在";
@@ -154,7 +159,7 @@ $owl_lang->err_captcha_auth		 = "圖片驗證錯誤";
 // Error Messages END
 //********************************************************
 
-$owl_lang->actionbtn_main_menu         = "Main Menu";
+$owl_lang->actionbtn_main_menu         = "主選單";
 $owl_lang->btn_add_field           = "新增欄位";
 $owl_lang->btn_add_file           = "新增文件";
 $owl_lang->btn_add_folder           = "新增資料夾";
@@ -201,9 +206,9 @@ $owl_lang->alt_btn_submit          = "Submit Form";
 $owl_lang->btn_thumb_view           = "檢視縮圖";
 $owl_lang->btn_trash_admin           = "垃圾桶";
 $owl_lang->btn_export           = "匯出";
-$owl_lang->btn_gen_pdf          = "Generate PDF";
-$owl_lang->user_tool_menu_label         = "User Tools";
-$owl_lang->admins_tool_menu_label       = "Admin Tools";
+$owl_lang->btn_gen_pdf          = "產生 PDF";
+$owl_lang->user_tool_menu_label         = "使用者工具";
+$owl_lang->admins_tool_menu_label       = "管理者工具";
 
 //********************************************************
 // Image Alternate popup Messages BEGIN
@@ -480,7 +485,7 @@ $owl_lang->tot_new_files		 = "新檔：";
 $owl_lang->tot_updated_files		 = "更新：";
 $owl_lang->updated_file			 = "更新！";
 $owl_lang->user               		 = "使用者";
-$owl_lang->ver                       	= "Ver."; 
+$owl_lang->ver                       	= "版本"; 
 $owl_lang->past_number                  = "Past number of Days :";
 // NEW STUFF
 $owl_lang->favorite  = "我的最愛";
@@ -521,7 +526,7 @@ $owl_lang->email_subject	 = "主旨";
 $owl_lang->email_to		 = "寄給";
 $owl_lang->emailing		 = "郵寄中";
 $owl_lang->keywords 		 = "關鍵字";
-$owl_lang->saved_keywords       = "Saved Keywords:";
+$owl_lang->saved_keywords       = "已存檔的關鍵字";
 $owl_lang->modify_url		 = "網址";
 $owl_lang->modifying		 = "修改中";
 $owl_lang->name               	= "Name"; 
@@ -552,11 +557,11 @@ $owl_lang->archive_extract_current  = "Extract to Current Folder?";
 $owl_lang->archive_extract_overwrite  = "Overwrite Existing Files (Update)?";
 $owl_lang->optional_file_index   = "Index file?:";
 
-$owl_lang->progressbar_upload_start  = "Upload Starting...";
-$owl_lang->progressbar_uploading     = "Uploading";
-$owl_lang->progressbar_upload_cancel = "Canceling Upload...";
+$owl_lang->progressbar_upload_start  = "開始上傳...";
+$owl_lang->progressbar_uploading     = "正在上傳";
+$owl_lang->progressbar_upload_cancel = "正在取消上傳";
 $owl_lang->progressbar_post_upload   = "Post Upload Processing...";
-$owl_lang->error_select_file         = "Please Select a File For Upload";
+$owl_lang->error_select_file         = "請選擇要上傳的檔案";
 
 
 //********************************************************
@@ -579,8 +584,8 @@ $owl_lang->self_reg_subj	 = "您的帳號";
 $owl_lang->send_pass		 = "傳送密碼";
 $owl_lang->submit		 = "確定送出";
 $owl_lang->thank_you_1		 = "謝謝!";
-$owl_lang->thank_you_2          = "Your password will be sent to your e-mail address";
-$owl_lang->thank_you_3          = "Your account needs to be enabled by the administrator before you can log in.";
+$owl_lang->thank_you_2          = "你的密碼將會送至你的e-mail";
+$owl_lang->thank_you_3          = "你的帳號需要被管理者開通才能登入";
 
 
 //NEW STUFF
@@ -630,8 +635,8 @@ $owl_lang->viewlog	 = "檢視紀錄於";
 // BEGIN NEW STUFF
 $owl_lang->diff_from	 = "差異比對來源";
 $owl_lang->diff_to	 = "差異比對標的";
-$owl_lang->btn_diff     = "Show Diff";
-$owl_lang->btn_diff_alt = "Show the differences between the selected files";
+$owl_lang->btn_diff     = "顯示差異";
+$owl_lang->btn_diff_alt = "顯示已選擇的檔案差異";
 // END NEW STUFF
 
 
@@ -667,10 +672,10 @@ $owl_lang->viewlogs      = "可以檢視系統紀錄";
 $owl_lang->viewreports   = "可以檢視系統報表";
 //NEW STUFF END
 
-$owl_lang->owl_prefs_phone = "Phone";
-$owl_lang->owl_prefs_department = "Department";
-$owl_lang->owl_prefs_address = "Address";
-$owl_lang->owl_prefs_note = "Notes";
+$owl_lang->owl_prefs_phone = "電話";
+$owl_lang->owl_prefs_department = "部門";
+$owl_lang->owl_prefs_address = "住址";
+$owl_lang->owl_prefs_note = "記事";
 
 
 //********************************************************
@@ -1001,7 +1006,7 @@ $owl_lang->owl_log_hd_agent	 = "代理";
 $owl_lang->owl_log_hd_dt_tm	 = "日期 時間";
 $owl_lang->owl_log_hd_dtls	 = "詳情";
 $owl_lang->owl_log_hd_file	 = "檔案";
-$owl_lang->owl_log_hd_file_size = "File Size";
+$owl_lang->owl_log_hd_file_size = "檔案大小";
 $owl_lang->owl_log_hd_fld_path	 = "資料夾位置";
 $owl_lang->owl_log_hd_ip	 = "IP 位址";
 $owl_lang->owl_log_hd_user	 = "使用者";
@@ -1095,7 +1100,7 @@ $owl_lang->onlyyou_ad			 = "只有您可以讀取/下載/修改";
 $owl_lang->orphaned			 = "– 沒有擁有者  –";
 $owl_lang->owl_path			 = "檔案路徑：";
 $owl_lang->sessinuse			 = "這個行程已經被另一台主機占用，點閱被禁止<BR>";
-$owl_lang->sesstimeout			 = "你連接逾時，請重新登入<BR>";
+$owl_lang->sesstimeout			 = "你的連接逾時，請重新登入<BR>";
 $owl_lang->virus_infected 		 = "受病毒感染的檔案";
 $owl_lang->watermark_string             = "Confidential";
 $owl_lang->watermark_source             = "DoxBox " . DOXBOX_VERSION;
@@ -1120,10 +1125,10 @@ $owl_lang->title_sort     		 = "以此排序";
 $owl_lang->title_view_my     		 = "觀看我的檔案列表";
 $owl_lang->title_view_new     		 = "觀看在我上次離線後所有新進檔案列表";
 $owl_lang->title_view_updated     	 = "觀看在我上次離線後所有更新過的檔案列表";
-$owl_lang->alt_my                       = "View a List of My Files";
-$owl_lang->alt_group                    = "View of My Files in My Groups";
-$owl_lang->alt_checked_out              = "View List of Files I Currently have Checheked out";
-$owl_lang->alt_news                     = "Unread News items";
+$owl_lang->alt_my                       = "檢視我的檔案列表";
+$owl_lang->alt_group                    = "群組中檢視我的檔案列表";
+$owl_lang->alt_checked_out              = "我已查看的檔案列表";
+$owl_lang->alt_news                     = "未讀的新聞項目";
 $owl_lang->alt_special_access           = "List of Files that I have access to outside my Folder Browse access";
 
 //********************************************************
@@ -1175,10 +1180,10 @@ $owl_lang->stats_files		 = "每個使用者的檔案數量";
 $owl_lang->stats_folders	 = "每個使用者的資料夾數量";
 $owl_lang->stats_information	 = "需要啟用 Owl 檔案記錄功能，這個狀態才會顯示出來";
 $owl_lang->stats_top		 = "下載排行榜前20名";
-$owl_lang->stats_report_users_disabled         = "Users (Disabled Users)";
+$owl_lang->stats_report_users_disabled         = "使用者 (關閉)";
 $owl_lang->stats_report_users_entitlement         = "Users (User Entitlement)";
 $owl_lang->stats_report_users_filesfolders          = "Users (Files and Folders Per User)";
-$owl_lang->stats_report_users_inactive          = "Users (Inactive Users)";
+$owl_lang->stats_report_users_inactive          = "使用者 (未啟用)";
 $owl_lang->stats_users           = "使用者登錄（登入/錯誤/登出）";
 $owl_lang->stats_users_loggedin  = "目前登入";
 
@@ -1196,7 +1201,7 @@ $owl_lang->doc_field_name	 = "欄位名稱";
 $owl_lang->doc_field_pos	 = "欄位位置";
 $owl_lang->doc_field_required	 = "必填？";
 $owl_lang->doc_field_searchable	 = "可搜尋？";
-$owl_lang->doc_field_popup  = "Insert in popup description?";
+$owl_lang->doc_field_popup  = "插入彈出的描述內容?";
 $owl_lang->doc_field_size	 = "欄位大小";
 $owl_lang->doc_new_doc_type	 = "– 新增文件類型 –";
 $owl_lang->doc_specific		 = "文件指定欄位：";
@@ -1509,52 +1514,52 @@ $owl_lang->group_set_selected      = "Set Selected";
 $owl_lang->alt_group_set_selected  = "Sets the selected users";
 
 $owl_lang->btn_jupload                          = "Jupload";
-$owl_lang->alt_btn_jupload                      = "Add Multiple files using jupload";
+$owl_lang->alt_btn_jupload                      = "使用Jupload功能來加入大量檔案";
 
 $owl_lang->owl_use_smtp_ssl                     = "SMTP SSL:";
 $owl_lang->owl_smtp_port                        = "SMTP Port Number:";
-$owl_lang->owl_smtp_max_attachemnt_size         = "Maximum Attachent Size (bytes):";
-$owl_lang->owl_force_browser_to_ssl             = "Force Browser to use HTTPS:";
+$owl_lang->owl_smtp_max_attachemnt_size         = "最大附加檔案容量大小(bytes):";
+$owl_lang->owl_force_browser_to_ssl             = "瀏覽器強制使用加密協定(HTTPS):";
 $owl_lang->owl_file_update_different_name       = "File Update with Different Name:<br />(EXTENSION Must remain the same.)";
 $owl_lang->owl_use_wysiwyg_editor               = "Use WYSIWYG Editor for TextArea:";
-$owl_lang->owl_show_folder_desc_popup           = "Show Folder Description as Popup:";
-$owl_lang->owl_header_watermarking              = "PDF WATER MARKING OPTIONS";
-$owl_lang->owl_enable_watermarking              = "Enable Pdf Watermarking:";
-$owl_lang->owl_path_to_pdftk                    = "Path to pdftk:";
+$owl_lang->owl_show_folder_desc_popup           = "浮動方式顯示目錄描述:";
+$owl_lang->owl_header_watermarking              = "PDF 浮水印設定";
+$owl_lang->owl_enable_watermarking              = "開啟PDF 浮水印功能:";
+$owl_lang->owl_path_to_pdftk                    = "pdftk路徑:";
 $owl_lang->owl_path_to_pdftk_bg_file            = "Path to custom watermark:<br />(path to a 1 page pdf file that will be used <br />as the watermark instead of the default";
-$owl_lang->owl_pdftk_greater_than_1_40          = "PDFTK version Greater than 1.40:";
+$owl_lang->owl_pdftk_greater_than_1_40          = "PDFTK 需大於1.40:";
 $owl_lang->owl_indexing_user_selectable         = "Make File Indexing User Selectable:";
 $owl_lang->owl_indexing_off                     = "Turn File Indexing OFF:";
 $owl_lang->owl_default_revision_type            = "Default Revision Type:";
-$owl_lang->owl_machine_timezone                 = "Machine Time zone:";
+$owl_lang->owl_machine_timezone                 = "系統時區:";
 $owl_lang->owl_previous_ver_downloadable        = "Make Previous Version Accesible:";
 $owl_lang->owl_auto_checkin_checkout            = "Mark Files as Checked out on Download:";
 $owl_lang->owl_user_default_view                = "User Default View EXPANDED:";
 $owl_lang->owl_user_default_revision            = "Default Revision Type:";
 $owl_lang->owl_user_major_revision              = "User Initial Major Revision:";
 $owl_lang->owl_user_minor_revision              = "User Initial Minor Revision:";
-$owl_lang->owl_user_pdfwatermark                = "PDF get Watermarked:";
-$owl_lang->owl_user_email_pass                  = "Email User / Password:";
-$owl_lang->owl_use_email_signature              = "Use Signature?:";
+$owl_lang->owl_user_pdfwatermark                = "PDF 使用的浮水印:";
+$owl_lang->owl_user_email_pass                  = "Email 使用者名稱 / 密碼:";
+$owl_lang->owl_use_email_signature              = "使用簽名檔?:";
 $owl_lang->owl_email_signature                  = "Email Signature:";
-$owl_lang->owl_file_link                        = "File Link:";
-$owl_lang->alt_hot_link                         = "Display Direct URL";
+$owl_lang->owl_file_link                        = "檔案連結:";
+$owl_lang->alt_hot_link                         = "顯示原始網址連結";
 $owl_lang->alt_link_folder                      = "Link This Folder";
 
 
 //********************************************************
 // Field Types BEGIN
 //********************************************************
-$owl_lang->field_type_text = "Text";
-$owl_lang->field_type_picklist = "Pick List";
-$owl_lang->field_type_textarea = "Text Area";
-$owl_lang->field_type_checkbox = "Check Box";
-$owl_lang->field_type_mcheckbox = "Multiple Check Box";
-$owl_lang->field_type_radio = "Radio Button";
-$owl_lang->field_type_separator = "Separator";
-$owl_lang->field_type_table = "Table";
-$owl_lang->field_type_URL = "URL";
-$owl_lang->field_type_Date = "Date";
+$owl_lang->field_type_text = "文字";
+$owl_lang->field_type_picklist = "列表選擇";
+$owl_lang->field_type_textarea = "文字區域";
+$owl_lang->field_type_checkbox = "單選選擇";
+$owl_lang->field_type_mcheckbox = "多重選擇";
+$owl_lang->field_type_radio = "按鈕選擇";
+$owl_lang->field_type_separator = "分隔線";
+$owl_lang->field_type_table = "表格";
+$owl_lang->field_type_URL = "網址";
+$owl_lang->field_type_Date = "日期";
 //********************************************************
 // Field Types END
 //********************************************************
@@ -1562,27 +1567,27 @@ $owl_lang->field_type_Date = "Date";
 //********************************************************
 // Extensions Text BEGIN
 //********************************************************
-$owl_lang->tables_btn = "User Tables";
-$owl_lang->tables_header = "User Tables Management";
-$owl_lang->table = "Table";
+$owl_lang->tables_btn = "使用者表格";
+$owl_lang->tables_header = "使用者表格管理";
+$owl_lang->table = "表格";
 $owl_lang->tuple = "Tuple";
 $owl_lang->tables_tupleView = "View Tuples";
 $owl_lang->tables_tupleAdd = "Add Tuple";
-$owl_lang->tables_tableEdit = "Modify Table";
-$owl_lang->tables_tableAdd = "Add Table";
-$owl_lang->tables_descr = "Description";
-$owl_lang->tables_descr2 = "Extended Description";
-$owl_lang->tables_tupleEdit = "Edit";
-$owl_lang->tables_tupleDelete = "Delete";
-$owl_lang->tables_actions = "Actions";
+$owl_lang->tables_tableEdit = "修改表格";
+$owl_lang->tables_tableAdd = "增加表格";
+$owl_lang->tables_descr = "描述";
+$owl_lang->tables_descr2 = "加強描述";
+$owl_lang->tables_tupleEdit = "編輯";
+$owl_lang->tables_tupleDelete = "刪除";
+$owl_lang->tables_actions = "動作";
 $owl_lang->tables_tupleDeleted = "The tuple was successfully deleted!";
 $owl_lang->tables_tupleAdded = "The tuple was successfully added!";
 $owl_lang->tables_tupleEdited = "The tuple was successfully edited!";
-$owl_lang->tables_back = "Back";
-$owl_lang->tables_quickAdd = "Add";
-$owl_lang->tables_refresh = "Refresh";
+$owl_lang->tables_back = "返回";
+$owl_lang->tables_quickAdd = "增加";
+$owl_lang->tables_refresh = "更新";
 
-$owl_lang->calendar_title = "Calendar";
+$owl_lang->calendar_title = "行事曆";
 
 $owl_lang->docRel_title = "CONFIGURE DOCUMENT RELATIONSHIPS";
 $owl_lang->docRel_activateFunction = "Activate relationships between files";
@@ -1590,16 +1595,16 @@ $owl_lang->docRel_list = "Related documents";
 //********************************************************
 // Extensions Text END
 //********************************************************
-$owl_lang->ownership_change_1 = "You do not own this file.";
+$owl_lang->ownership_change_1 = "你沒有這個檔案的權限";
 $owl_lang->ownership_change_2 = "Would you like to take ownership on Checkout?";
 $owl_lang->ownership_change_subj = "File: %s -- Take Ownership (%s)";
 
-$owl_lang->member_membership = "Membership";
-$owl_lang->member_fileadmin = "File Admin";
-$owl_lang->member_group = "Group";
+$owl_lang->member_membership = "成員";
+$owl_lang->member_fileadmin = "檔案管理者";
+$owl_lang->member_group = "群組";
 
-$owl_lang->user_created = "Created.";
-$owl_lang->err_bad_username     = "Please enter a valid username or email address";
+$owl_lang->user_created = "建立者";
+$owl_lang->err_bad_username     = "請輸入有效的使用者名稱或e-mail位址";
 
 $owl_lang->motd_headding = "Message of the Day MOTD";
 $owl_lang->motd_label    = "Message (Blank For None)";
@@ -1612,63 +1617,63 @@ $owl_lang->add_file_page_title     = "Upload New Document";
 $owl_lang->add_url_page_title     = "Add a URL";
 $owl_lang->add_note_page_title     = "Add a New Note";
 $owl_lang->edit_folder_page_title     = "Modify Folder Properties";
-$owl_lang->copy_folder_page_title     = "Copy a Folder";
-$owl_lang->move_folder_page_title     = "Move a Folder";
-$owl_lang->link_folder_page_title     = "Link a Folder to Another Directory";
-$owl_lang->setacl_folder_page_title     = "Set Folder Security Policy";
-$owl_lang->setacl_file_page_title     = "Set File Security Policy";
-$owl_lang->edit_file_page_title     = "Modify File Properties";
-$owl_lang->copy_file_page_title     = "Copy a File";
-$owl_lang->move_file_page_title     = "Move a File";
-$owl_lang->upd_file_page_title     = "Update a File";
+$owl_lang->copy_folder_page_title     = "拷貝目錄";
+$owl_lang->move_folder_page_title     = "移動目錄";
+$owl_lang->link_folder_page_title     = "連結目錄至另一目錄";
+$owl_lang->setacl_folder_page_title     = "設定目錄安全性";
+$owl_lang->setacl_file_page_title     = "設定檔案安全性";
+$owl_lang->edit_file_page_title     = "修改檔案屬性";
+$owl_lang->copy_file_page_title     = "拷貝檔案";
+$owl_lang->move_file_page_title     = "移動檔案";
+$owl_lang->upd_file_page_title     = "更新檔案";
 $owl_lang->email_file_page_title     = "E-Mail a File";
-$owl_lang->comment_file_page_title     = "Add / View / Edit A Comment to a File";
-$owl_lang->link_file_page_title     = "Link a File to Another Directory";
-$owl_lang->jupload_page_title     = "Bulk File Upload";
-$owl_lang->bulk_move_page_title   = "Bulk Moving...";
-$owl_lang->bulk_mail_page_title   = "Bulk Emailing...";
-$owl_lang->view_page_title   = "View File Details...";
-$owl_lang->viewing_page_title   = "Viewing...";
-$owl_lang->playing_page_title   = "Playing...";
-$owl_lang->searching_page_title   = "Searching...";
+$owl_lang->comment_file_page_title     = "增加/檢視/編輯 檔案評論";
+$owl_lang->link_file_page_title     = "連結檔案至另一目錄";
+$owl_lang->jupload_page_title     = "大量檔案上傳";
+$owl_lang->bulk_move_page_title   = "大量移動...";
+$owl_lang->bulk_mail_page_title   = "大量寄信...";
+$owl_lang->view_page_title   = "檢視檔案細節...";
+$owl_lang->viewing_page_title   = "檢視...";
+$owl_lang->playing_page_title   = "播放...";
+$owl_lang->searching_page_title   = "搜尋...";
 
-$owl_lang->syslog_filename = "File Name" . LABEL_TERMINATOR;
-$owl_lang->syslog_date_from = "Date From (YYYY-MM-DD HH:MM:SS)" . LABEL_TERMINATOR;
-$owl_lang->syslog_date_to = "Date to   (YYYY-MM-DD HH:MM:SS)" . LABEL_TERMINATOR;
+$owl_lang->syslog_filename = "檔案名稱" . LABEL_TERMINATOR;
+$owl_lang->syslog_date_from = "日期從 (YYYY-MM-DD HH:MM:SS)" . LABEL_TERMINATOR;
+$owl_lang->syslog_date_to = "日期至   (YYYY-MM-DD HH:MM:SS)" . LABEL_TERMINATOR;
 $owl_lang->syslog_ip_host = "IP Address(HostName)" . LABEL_TERMINATOR;
 $owl_lang->alt_gen_csv     = "Generate CSV Version of the above File";
-$owl_lang->btn_gen_csv     = "Generate CSV";
-$owl_lang->empty_folder   = " E M P T Y &nbsp;  F O L D E R ";
+$owl_lang->btn_gen_csv     = "產生CSV格式";
+$owl_lang->empty_folder   = " 空資料夾";
 
-$owl_lang->alt_btn_import_users    = "Import users From CSV File";
+$owl_lang->alt_btn_import_users    = "匯入CSV格式的使用者";
 $owl_lang->btn_admin_maint_on           = "MAINTENANCE MODE";
 $owl_lang->alt_btn_admin_maint_on       = "Blocks User sigon, so the administrator can perform a task without users on the system";
 $owl_lang->btn_admin_maint_off          = "NORMAL MODE";
 $owl_lang->alt_btn_admin_maint_off = "Turn Maintenace Mode Off (Permit Users to Login)";
 $owl_lang->alt_tables_btn = "Table";
-$owl_lang->alt_btn_admin_users = "User Administration";
-$owl_lang->alt_btn_admin_groups = "Group Administration";
+$owl_lang->alt_btn_admin_users = "使用者管理";
+$owl_lang->alt_btn_admin_groups = "群組管理";
 
-$owl_lang->alt_btn_main_menu_collapse = "Collapse/Open The Main Menu";
-$owl_lang->email_reply_to_name = "Document Management System";
+$owl_lang->alt_btn_main_menu_collapse = "摺疊/展開 主選單";
+$owl_lang->email_reply_to_name = "文件管理系統";
 // *********************************
 // report/duplicate_filename.php
 // **********************************
 
-$owl_lang->report7_title = "List Files with Duplicate File Name";
-$owl_lang->report7_report_title = "List of Duplicate Files Repository Wide";
-$owl_lang->report7_title_fileid = "File ID";
+$owl_lang->report7_title = "重覆檔案名稱列表";
+$owl_lang->report7_report_title = "重覆檔案儲存庫列表";
+$owl_lang->report7_title_fileid = "檔案編號";
 $owl_lang->report7_title_docnum = "Doc#";
-$owl_lang->report7_title_file_name = "File Name";
-$owl_lang->report7_title_file_size = "File Size";
-$owl_lang->report7_title_file_count = "File Count";
-$owl_lang->report7_title_file_path = "File path";
+$owl_lang->report7_title_file_name = "檔案名稱";
+$owl_lang->report7_title_file_size = "檔案大小";
+$owl_lang->report7_title_file_count = "檔案筆數";
+$owl_lang->report7_title_file_path = "檔案路徑";
 
 // *********************************
 // Maximumn Download Count Feature
 // *********************************
-$owl_lang->maximum_download_title = "DOWNLOAD COUNT FEATURE";
-$owl_lang->maximum_download_feature = "Enable Download Count Feature" . LABEL_TERMINATOR;
+$owl_lang->maximum_download_title = "檔案下載計數功能";
+$owl_lang->maximum_download_feature = "開啟檔案下載功能" . LABEL_TERMINATOR;
 $owl_lang->maximum_download_feature_extended = "Feature that Tracks the number of downloaded files and the total number of Bytes downloated, and blocks the user if Tresholds are reached.  This feature is to prevent Download abuse";
 $owl_lang->maximum_download_trigger = "Max # File Download Trigger" . LABEL_TERMINATOR;
 $owl_lang->maximum_download_trigger_extended = "Maximun number of downloads in a set number of seconds";
