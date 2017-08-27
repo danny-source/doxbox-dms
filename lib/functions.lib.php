@@ -4309,11 +4309,16 @@ function fFindFileFirstpartExtension ($filename, $sDelimiter = ".")
 {
    $filesearch = explode($sDelimiter, $filename);
    $extensioncounter = 0;
+   $firstpart = '';
    while ($filesearch[$extensioncounter + 1] != null)
    {
       // pre-append a "." separator in the name for each
       // subsequent part of the the name of the file.
-      $firstpart = '';
+      //
+      // if it have more than delimieter,firstpart alway store last string
+      // 每次都清除$firstpart會造成檔名中有delimiter超過1組時，檔名只能保留最後片斷
+      // 來解決無法取得完整的檔名
+      // $firstpart = '';
       if ($extensioncounter != 0)
       {
          $firstpart = $firstpart . $sDelimiter;
